@@ -67,15 +67,15 @@ export default function Home() {
         />
 
         <div className="container-page relative flex min-h-[640px] items-center py-8 sm:min-h-[calc(100svh-6rem)] sm:py-16 lg:py-20">
-          <div className="max-w-3xl animate-fade-up">
+          <div className="max-w-3xl">
             <span className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold text-white shadow-soft backdrop-blur sm:mb-6 sm:text-sm">
               <Sparkles size={14} /> Sazon dominicano de alta cocina
             </span>
-            <h1 className="mb-5 max-w-4xl font-serif text-4xl font-bold leading-[1.02] text-balance sm:mb-6 sm:text-6xl lg:text-7xl">
+            <h1 className="mb-5 max-w-4xl font-serif text-4xl font-bold leading-[1.02] text-white text-balance drop-shadow-[0_3px_18px_rgba(0,0,0,0.55)] sm:mb-6 sm:text-6xl lg:text-7xl">
               El alma de <span className="text-primary-light">Quisqueya</span>{" "}
               en tu mesa.
             </h1>
-            <p className="mb-7 max-w-2xl text-base leading-relaxed text-white/85 sm:mb-9 sm:text-xl">
+            <p className="mb-7 max-w-2xl text-base leading-relaxed text-white/90 drop-shadow-[0_2px_12px_rgba(0,0,0,0.55)] sm:mb-9 sm:text-xl">
               Mangu, sancocho y pasteles en hoja preparados con ingredientes
               frescos, receta de familia y entrega puntual para tu casa,
               oficina o evento.
