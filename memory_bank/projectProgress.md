@@ -18,6 +18,7 @@ Last updated: 2026-06-24
 3. Corrected the menu filtering dependency chain so the client menu reacts to the live product context.
 4. Created the `memory_bank` folder to preserve progress, architecture notes, and handoff knowledge.
 5. Added `vercel.json` so the SPA can be deployed with route fallback and basic security headers.
+6. Upgraded the home hero using the stronger editorial direction from the original Sarah's Kitchen while keeping SarahTwo's working structure.
 
 ## Functional state of the app
 
@@ -50,6 +51,12 @@ Last updated: 2026-06-24
   - connect repository
   - define domain
   - decide whether this branch stays frontend-only or becomes API-backed
+
+## Visual comparison decision
+
+- SarahTwo remains the recommended base because its menu and site flow are more stable.
+- The original Sarah's Kitchen had a stronger first impression, so the new SarahTwo hero adopts that premium editorial direction.
+- The original still has a menu loading issue, so it should not become the final base without remediation.
 
 ## Handoff note
 
