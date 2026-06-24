@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-cafe font-display antialiased;
+    @apply selection:bg-primary selection:text-white;
+  }
+
+  .dark body {
+    @apply bg-cafe text-cream;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-semibold rounded-full
+           transition-all duration-200 active:scale-95 disabled:opacity-50
+           disabled:pointer-events-none;
+  }
+
+  .btn-primary {
+    @apply btn px-8 py-4 bg-primary text-white text-lg shadow-primary
+           hover:bg-primary-dark hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply btn px-8 py-4 bg-white text-cafe border border-gray-200 text-lg
+           hover:bg-cream;
+  }
+
+  .btn-ghost {
+    @apply btn px-6 py-3 text-warm hover:text-primary;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-soft transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:shadow-hover hover:-translate-y-1;
+  }
+}
+
+@layer utilities {
+  /* Ocultar scrollbar (scroll horizontal de cards, etc.) */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Truncar texto a N líneas */
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
